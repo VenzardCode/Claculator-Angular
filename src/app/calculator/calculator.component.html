@@ -1,0 +1,77 @@
+<div class="main_wrapper">
+  <div class="input_wrapper">
+
+
+    <div class="inp">{{input}}</div>
+  </div>
+
+  <div class="fun_wrapper">
+
+    <div>
+      <button mat-flat-button color="accent" class="btn red" type="button" (click)="allClear()">AC</button>
+    </div>
+    <div>
+      <button mat-flat-button color="accent" class="btn red" type="button" (click)="clear()">CE</button>
+    </div>
+    <div>
+      <button mat-flat-button color="primary" class="btn orange" type="button" (click)="pressOperator('/')">/</button>
+    </div>
+    <div>
+      <button mat-flat-button color="primary" class="btn orange" type="button" (click)="pressOperator('*')">X</button>
+    </div>
+
+    <div>
+      <button mat-flat-button color="primary" class="btn" type="button" (click)="pressNum('7')">7</button>
+    </div>
+    <div>
+      <button mat-flat-button color="primary" class="btn" type="button" (click)="pressNum('8')">8</button>
+    </div>
+    <div>
+      <button mat-flat-button color="primary" class="btn" type="button" (click)="pressNum('9')">9</button>
+    </div>
+    <div>
+      <button mat-flat-button color="primary" class="btn orange" (click)="pressOperator('-')">-</button>
+    </div>
+
+    <div>
+      <button mat-flat-button color="primary" class="btn" (click)="pressNum('4')">4</button>
+    </div>
+    <div>
+      <button mat-flat-button color="primary" class="btn" (click)="pressNum('5')">5</button>
+    </div>
+    <div>
+      <button mat-flat-button color="primary" class="btn" (click)="pressNum('6')">6</button>
+    </div>
+    <div>
+      <button mat-flat-button color="primary" class="btn orange" (click)="pressOperator('+')">+</button>
+    </div>
+
+
+    <div>
+      <button mat-flat-button color="primary" class="btn" type="button" (click)="pressNum('1')">1</button>
+    </div>
+    <div>
+      <button mat-flat-button color="primary" class="btn" type="button" (click)="pressNum('2')">2</button>
+    </div>
+    <div>
+      <button mat-flat-button color="primary" class="btn" (click)="pressNum('3')">3</button>
+    </div>
+
+    <div>
+      <button mat-flat-button color="primary" class="btn orange" (click)="pressOperator('%')">%</button>
+    </div>
+    <div>
+      <button mat-flat-button color="primary" class="btn orange" (click)="pressNum('0')">0</button>
+    </div>
+    <div>
+      <button mat-flat-button color="primary" class="btn" (click)="pressNum('00')">00</button>
+    </div>
+    <div>
+      <button mat-flat-button color="primary" class="btn" (click)="pressNum('.')">.</button>
+    </div>
+    <div>
+      <button mat-flat-button color="accent" class="btn orange" (click)="getAnswer()">=</button>
+    </div>
+
+  </div>
+</div>
